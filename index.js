@@ -2,7 +2,8 @@
 const inquirer = require("inquirer");
 require("console.table");
 
-const showEmployee = require('./utils/employees');
+const showEmployee = require('./utils/showEmployees');
+const showEmployeeDepart = require('./utils/showEmployeeDepart');
 const connection = require('./utils/sqlConnection');
 
 
@@ -18,6 +19,7 @@ connection.connect(function (err) {
     ╚═══╩╩╩╣╔═╩═╩══╩═╗╔╩══╩══╝╚╝╚╝╚╩╝╚╩╝╚╩╝╚╩═╗╠══╩╝
     ───────║║──────╔═╝║─────────────────────╔═╝║
     ───────╚╝──────╚══╝─────────────────────╚══╝`)
+
     // runs the app
     firstPrompt();
 });
@@ -43,6 +45,10 @@ function firstPrompt() {
           case "View Employees":
             showEmployee();
             break;
+
+            case "View Employees by Department":
+          showEmployeeDepart();
+          break;
         }
     });
 }
