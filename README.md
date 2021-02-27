@@ -13,6 +13,7 @@ A simple employee tracker where you can customize and edit different employees w
 ## Instructions
 - Download the code
 - install npm packages mysql, inquirer, and express
+- go to utils/sqlConnection and find 'PASSWORD' and change it to your own mysql password
 - to run the program type in "node server" in the command line
 
 link to demo video
