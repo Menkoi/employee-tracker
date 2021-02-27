@@ -1,6 +1,5 @@
 const connection = require('./sqlConnection');
 const inquirer = require("inquirer");
-const startManager = require('./index');
 
 function showEmployeeDepart() {
     console.log("Viewing employees by department");
@@ -50,8 +49,6 @@ function showEmployeeDepart() {
   
           console.table("response ", res);
           console.log(res.affectedRows + "Employees are viewed!");
-  
-          //startManager();
         });
       });
     });

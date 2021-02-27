@@ -1,4 +1,3 @@
-const startManager = require("./index");
 const inquirer = require("inquirer");
 const connection = require('./sqlConnection');
 
@@ -88,7 +87,6 @@ function updateEmployeeRole() {
             console.table(res);
             console.log(res.affectedRows + "Updated successfully!");
   
-           //startManager();
           });
       });
   }

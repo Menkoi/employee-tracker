@@ -1,5 +1,4 @@
 const inquirer = require("inquirer");
-const startManager = require("./index");
 const connection = require('./sqlConnection');
 
 function addEmployee() {
@@ -55,7 +54,6 @@ function addEmployee() {
             console.table(res);
             console.log(res.insertedRows + "Inserted successfully!");
   
-            //startManager();
           });
       });
     });

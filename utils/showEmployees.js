@@ -1,4 +1,3 @@
-const startManager = require('./index');
 const connection = require('./sqlConnection');
 
 function showEmployee() {
@@ -20,7 +19,6 @@ function showEmployee() {
       console.table(res);
       console.log("Employees viewed!");
   
-     // startManager();
     });
   
   };

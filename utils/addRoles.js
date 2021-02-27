@@ -1,4 +1,3 @@
-const startManager = require("./index");
 const connection = require('./sqlConnection');
 const inquirer = require("inquirer");
 
@@ -63,7 +62,6 @@ function addRole() {
             console.table(res);
             console.log("Role Inserted!");
   
-            //startManager();
           });
   
       });

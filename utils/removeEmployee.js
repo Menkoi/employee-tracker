@@ -1,5 +1,4 @@
 const inquirer = require("inquirer");
-const startManager = require("./index");
 const connection = require('./sqlConnection');
 
 function removeEmployee() {
@@ -38,7 +37,6 @@ function removeEmployee() {
         console.table(res);
         console.log(res.affectedRows + "Deleted!");
 
-       // startManager();
       });
     });
   });
