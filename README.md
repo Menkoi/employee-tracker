@@ -7,6 +7,9 @@
 ## Description
 A simple employee tracker where you can customize and edit different employees who work for you made using express, mysql, and JS.
 
+## Screenshot
+<img src="https://i.imgur.com/URScbck.png"/></a>
+
 ## Instructions
 - Download the code
 - install npm packages mysql, inquirer, and express
