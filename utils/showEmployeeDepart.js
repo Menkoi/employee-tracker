@@ -1,8 +1,9 @@
 const connection = require('./sqlConnection');
 const inquirer = require("inquirer");
+const startManager = require('./index');
 
 function showEmployeeDepart() {
-    console.log("Viewing employees by department\n");
+    console.log("Viewing employees by department");
   
     var query =
       `SELECT d.id, d.name, r.salary AS budget
@@ -21,7 +22,7 @@ function showEmployeeDepart() {
       }));
   
       console.table(res);
-      console.log("Department view succeed!\n");
+      console.log("Department view succeed!");
   
       inquirer
       .prompt([
@@ -48,9 +49,9 @@ function showEmployeeDepart() {
           if (err) throw err;
   
           console.table("response ", res);
-          console.log(res.affectedRows + "Employees are viewed!\n");
+          console.log(res.affectedRows + "Employees are viewed!");
   
-          firstPrompt();
+          //startManager();
         });
       });
     });

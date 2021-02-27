@@ -1,7 +1,8 @@
+const startManager = require('./index');
 const connection = require('./sqlConnection');
 
 function showEmployee() {
-    console.log("Viewing employees\n");
+    console.log("Viewing employees");
   
     var query =
       `SELECT e.id, e.first_name, e.last_name, r.title, d.name AS department, r.salary, CONCAT(m.first_name, ' ', m.last_name) AS manager
@@ -17,11 +18,11 @@ function showEmployee() {
       if (err) throw err;
   
       console.table(res);
-      console.log("Employees viewed!\n");
+      console.log("Employees viewed!");
   
-      firstPrompt();
+     // startManager();
     });
   
-  }
+  };
 
   module.exports = showEmployee;
