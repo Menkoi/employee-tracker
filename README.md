@@ -17,7 +17,7 @@ A simple employee tracker where you can customize and edit different employees w
 - to run the program type in "node server" in the command line
 
 link to demo video
-https://drive.google.com/file/d/1UwH5chvlmm0OZc5AV6lGbdNCkNmJlP3y/view
+https://drive.google.com/file/d/1USjb1NCbJKgRdP5K84AtEL9Pfv2TMyc_/view
 
  ## Questions? Contact me
 
