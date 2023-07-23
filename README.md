@@ -19,10 +19,3 @@ A simple employee tracker where you can customize and edit different employees w
 link to demo video
 https://drive.google.com/file/d/1USjb1NCbJKgRdP5K84AtEL9Pfv2TMyc_/view
 
- ## Questions? Contact me
-
-  - Menkoi
-
-  - https://github.com/Menkoi
-
-  - celaeon@gmail.com
